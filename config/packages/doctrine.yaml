@@ -12,3 +12,4 @@ doctrine:
                 mappings:
                     SonataUserBundle: ~
                     FOSUserBundle: ~
+                    ApplicationSonataUserBundle: ~
