@@ -18,6 +18,7 @@ use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use FOS\CKEditorBundle\Form\Type\CKEditorType;
 use function Sodium\add;
 
 final class ExerciceAdmin extends AbstractAdmin
@@ -28,72 +29,104 @@ final class ExerciceAdmin extends AbstractAdmin
             ->tab('Résumé')
                 ->with('titre', ['class' => 'col-md-5'])
                 ->add('nom', TextType::class)
-                ->add('numero',TextType::class)
+                ->add('numero',TextType::class,[
+                    'required' => false,
+                ])
                 ->end()
                 ->with('Objectifs', ['class' => 'col-md-7'])
-                ->add('objectif',TextareaType::class)
+                ->add('objectif',TextareaType::class,[
+                'required' => false,
+            ])
+
+/*                ->add('objectif',CKEditorType::class,['config' => array(
+        'uiColor' => '#ffffff',
+    ),])*/
+
                 ->end()
             ->end()
             ->tab('Avant')
-                ->with('Mise en place', ['class' => 'col-md-6'])
-                ->add('miseEnPlace',TextareaType::class)
+                ->with('Démarrage', ['class' => 'col-md-6'])
+                ->add('demarrage',TextareaType::class,[
+                    'required' => false,
+                ])
                 ->end()
                 ->with('Consignes', ['class' => 'col-md-6'])
-                ->add('consigne',TextareaType::class)
+                ->add('consigne',TextareaType::class,[
+                    'required' => false,
+                ])
                 ->end()
             ->end()
             ->tab('Pendant')
                 ->with('Conseils', ['class' => 'col-md-6'])
-                ->add('conseil',TextareaType::class)
+                ->add('conseil',TextareaType::class,[
+                    'required' => false,
+                ])
                 ->end()
                 ->with('Régulations', ['class' => 'col-md-6'])
-                ->add('regulation',TextareaType::class)
+                ->add('regulation',TextareaType::class,[
+                    'required' => false,
+                ])
                 ->end()
             ->end()
             ->tab('infos')
                 ->with('organisation', ['class' => 'col-md-6'])
-                ->add('nb_participant',NumberType::class)
-                ->add('nb_gardien',NumberType::class)
-                ->add('duree',NumberType::class)
+                ->add('nb_participant',NumberType::class,[
+                    'required' => false,
+                ])
+                ->add('nb_gardien',NumberType::class,[
+                    'required' => false,
+                ])
+                ->add('duree',NumberType::class,[
+                    'required' => false,
+                ])
                 ->end()
                 ->with('organisation', ['class' => 'col-md-6'])
                 ->add('gratuit',BooleanType::class)
-                ->add('statut',ChoiceType::class)
                 ->end()
             ->end()
             ->tab('Classement')
+
+
+            ->with('Type', ['class' => 'col-md-6'])
             ->add('type',EntityType::class,[
-                // looks for choices from this entity
+                //'required' => false,
                 'class' => Type::class,
                 'choice_label' => 'nom',
                 // used to render a select box, check boxes or radios
-                // 'multiple' => true,
-                // 'expanded' => true,
+                'multiple' => true,
+                'expanded' => false,
             ])
+            ->end()
+            ->with('poste', ['class' => 'col-md-6'])
             ->add('poste',EntityType::class,[
                 // looks for choices from this entity
                 'class' => Poste::class,
                 'choice_label' => 'nom',
                 // used to render a select box, check boxes or radios
                 'multiple' => true,
-                'expanded' => true,
+                'expanded' => false,
             ])
+            ->end()
+            ->with('categorie', ['class' => 'col-md-6'])
             ->add('categorie',EntityType::class,[
                 // looks for choices from this entity
                 'class' => Categorie::class,
                 'choice_label' => 'nom',
                 // used to render a select box, check boxes or radios
                 'multiple' => true,
-                'expanded' => true,
+                'expanded' => false,
             ])
+            ->end()
+            ->with('niveau', ['class' => 'col-md-6'])
             ->add('niveau',EntityType::class,[
                 // looks for choices from this entity
                 'class' => Niveau::class,
                 'choice_label' => 'nom',
                 // used to render a select box, check boxes or radios
                 'multiple' => true,
-                'expanded' => true,
+                'expanded' => false,
             ])
+            ->end()
             ->end()
         ;
     }
