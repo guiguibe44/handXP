@@ -191,8 +191,6 @@
       <workItem from="1583418612394" duration="4741000" />
       <workItem from="1583437004414" duration="17000" />
       <workItem from="1583437022570" duration="4567000" />
-      <workItem from="1583501188488" duration="5817000" />
-      <workItem from="1583757137923" duration="465000" />
     </task>
     <servers />
   </component>
@@ -219,11 +217,7 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="785" y="354" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583312327744" />
-    <state x="475" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1583757139453">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="475" y="243" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583757139453" />
-    <state x="667" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583310268391" />
+
     <state x="443" y="158" width="672" height="475" key="search.everywhere.popup" timestamp="1583439692665">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
