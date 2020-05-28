@@ -56,7 +56,7 @@ class Exercice
     /**
      * @ORM\Column(type="text", nullable=true)
      */
-    private $miseEnPlace;
+    private $demarrage;
 
     /**
      * @ORM\Column(type="text", nullable=true)
@@ -72,11 +72,6 @@ class Exercice
      * @ORM\Column(type="boolean", nullable=true)
      */
     private $gratuit;
-
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $statut;
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Type", inversedBy="exercices")
@@ -195,14 +190,14 @@ class Exercice
         return $this;
     }
 
-    public function getMiseEnPlace(): ?string
+    public function getDemarrage(): ?string
     {
-        return $this->miseEnPlace;
+        return $this->demarrage;
     }
 
-    public function setMiseEnPlace(?string $miseEnPlace): self
+    public function setDemarrage(?string $demarrage): self
     {
-        $this->miseEnPlace = $miseEnPlace;
+        $this->demarrage = $demarrage;
 
         return $this;
     }
@@ -243,17 +238,6 @@ class Exercice
         return $this;
     }
 
-    public function getStatut(): ?int
-    {
-        return $this->statut;
-    }
-
-    public function setStatut(int $statut): self
-    {
-        $this->statut = $statut;
-
-        return $this;
-    }
 
     /**
      * @return Collection|Type[]

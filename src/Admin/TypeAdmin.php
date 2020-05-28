@@ -17,7 +17,9 @@ final class TypeAdmin extends AbstractAdmin
     {
         $formMapper
             ->add('nom', TextType::class)
-            ->add('image',FileType::class)
+            ->add('image',FileType::class,[
+                'required' => false,
+            ])
         ;
     }
 
