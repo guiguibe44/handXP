@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc6ea757-7768-4597-a58d-87820519aaa0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,9 +19,14 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -159,6 +167,10 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/ckeditor-bundle" />
       <path value="$PROJECT_DIR$/vendor/tilleuls/ckeditor-sonata-media-bundle" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/vendor/webimpress/safe-writer" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Yek5fFnVL3rto44FDhggc1gySD" />
@@ -167,18 +179,21 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/css" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\handXP\css" />
       <recent name="C:\wamp64\www\handxp\src\Admin" />
     </key>
   </component>
@@ -197,11 +212,16 @@
       <workItem from="1583437004414" duration="17000" />
       <workItem from="1583437022570" duration="4567000" />
       <workItem from="1583501188488" duration="5817000" />
+      <workItem from="1583574118378" duration="4440000" />
+      <workItem from="1589292576872" duration="88000" />
+      <workItem from="1590658232359" duration="69000" />
+      <workItem from="1590658308559" duration="219000" />
+      <workItem from="1590668569326" duration="3170000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="181" key="#Composer" timestamp="1583311477258">
@@ -212,18 +232,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583313532933" />
-    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1583437018709">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="2571" y="176" key="FileChooserDialogImpl" timestamp="1590669141091">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583437018709" />
+    <state x="651" y="176" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583588775392" />
+    <state x="2571" y="176" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1590669141091" />
     <state x="785" y="354" key="NewPhpClassDialog" timestamp="1583312327744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="785" y="354" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583312327744" />
-    <state x="667" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1583310268391">
+    <state x="667" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1589292631286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583310268391" />
+    <state x="667" y="347" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589292631286" />
     <state x="443" y="158" width="672" height="475" key="search.everywhere.popup" timestamp="1583439692665">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
